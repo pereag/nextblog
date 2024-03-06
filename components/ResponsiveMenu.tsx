@@ -2,7 +2,7 @@ import React from 'react';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Menu } from 'lucide-react';
 import { Button } from './ui/button';
-import { Category } from '@/types';
+import { ICategory } from '@/types';
 import { CATEGORIES } from '@/utils/categories';
 import Link from 'next/link';
 
@@ -18,7 +18,7 @@ export default function ResponsiveMenu() {
             <Button variant='ghost'>Write post</Button>
           </Link>
           <p>Categories</p>
-          {CATEGORIES.map((category: Category) => {
+          {CATEGORIES.map((category: ICategory) => {
             return (
               <Link
                 className='block px-2 py-1 text-lg'

@@ -14,7 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { CATEGORIES } from '@/utils/categories';
-import { Category } from '@/types';
+import { ICategory } from '@/types';
 
 export function HeaderNavigation() {
   return (
@@ -24,7 +24,7 @@ export function HeaderNavigation() {
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] '>
-              {CATEGORIES.map((category: Category) => (
+              {CATEGORIES.map((category: ICategory) => (
                 <ListItem
                   key={category.id}
                   href={`/categories/${category.slug}`}
