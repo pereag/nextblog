@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import ThemeProvider from '@/providers/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,15 +20,15 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <div>
-          <p>Header</p>
-          <Link href='/login'>Login</Link>
-          <Link href='/categories/test'>Test</Link>
-        </div>
-        {children}
-        <div>
-          <p>Footer</p>
-        </div>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <>
+            <Header></Header>
+            {children}
+            <div>
+              <p>Footer</p>
+            </div>
+          </>
+        </ThemeProvider>
       </body>
     </html>
   );
