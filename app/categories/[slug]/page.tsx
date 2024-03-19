@@ -1,3 +1,5 @@
+import PageContainer from '@/components/PageContainer';
+import PageTitle from '@/components/PageTitle';
 import React from 'react';
 
 type Props = {
@@ -8,5 +10,5 @@ type Props = {
 
 export default function CategoriesPage({ params }: Props) {
   const { slug } = params;
-  return <div>Categories Page {slug}</div>;
+  return (<PageContainer><PageTitle title={`Categories Page ${slug.replace("-", " ")}`}></PageTitle ></PageContainer>);
 }
