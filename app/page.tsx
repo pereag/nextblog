@@ -17,7 +17,7 @@ export default function Home() {
         >
           <div className='flex-ol flex h-full w-full flex-col items-center justify-center'>
             <div className='max-w-xs rounded-lg bg-secondary/80 p-4 sm:max-w-xl'>
-              <h1 className='text)3xl text-center font-bold sm:text-5xl'>
+              <h1 className='text-center text-3xl font-bold sm:text-5xl'>
                 Becom a better react déveloper
               </h1>
               <Input

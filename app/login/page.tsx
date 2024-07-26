@@ -9,7 +9,7 @@ import React from 'react';
 interface ILoginPage {
   params: {
     slug: string;
-  }
+  };
 }
 
 export default function LoginPage(props: ILoginPage) {
@@ -18,7 +18,7 @@ export default function LoginPage(props: ILoginPage) {
     <PageContainer>
       <div className='p-13'>
         <PageTitle title='Login or Register'></PageTitle>
-        <div className="flex flex-col gap-4 mx-auto max-w-sm">
+        <div className='mx-auto flex max-w-sm flex-col gap-4'>
           <Button>
             <Github className='mr-3' />
             Signin With Github
@@ -29,5 +29,6 @@ export default function LoginPage(props: ILoginPage) {
           </Button>
         </div>
       </div>
-    </PageContainer>);
-} 
+    </PageContainer>
+  );
+}
