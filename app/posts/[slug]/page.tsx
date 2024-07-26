@@ -16,7 +16,6 @@ export default async function Singlepost({
 
   post === undefined && redirect(`/not-found`);
 
-
   return (
     <PageContainer>
       <div className='p-8'>
