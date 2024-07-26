@@ -3,9 +3,8 @@ import { IPost } from '@/types';
 import React from 'react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Separator } from "@/components/ui/separator"
+import { Separator } from '@/components/ui/separator';
 import { Eye, MessageCircle } from 'lucide-react';
-
 
 export default function SinglePost() {
   const POST: IPost = {
@@ -21,7 +20,7 @@ export default function SinglePost() {
     nbViews: 25,
     nbComments: 8,
     slug: 'react-state-management-choosing-right-solution',
-    content: "Hello"
+    content: 'Hello',
   };
 
   return (
@@ -39,18 +38,20 @@ export default function SinglePost() {
             </div>
           </div>
         </div>
-        <div className='flex justify-between items-center p-3 mb-3'>
-          <div className="flex justify-center item-center gap-3">
+        <div className='mb-3 flex items-center justify-between p-3'>
+          <div className='item-center flex justify-center gap-3'>
             <Avatar>
               <AvatarImage src='https://picsum.photos/120/120' />
               <AvatarFallback>{POST.author}</AvatarFallback>
             </Avatar>
             <div>
               <p>{POST.author}</p>
-              <p className='text-slate-500'>Posted on {new Date(POST.date).toLocaleDateString()}</p>
+              <p className='text-slate-500'>
+                Posted on {new Date(POST.date).toLocaleDateString()}
+              </p>
             </div>
           </div>
-          <div className='gap-2 flex'>
+          <div className='flex gap-2'>
             <div className='flex items-center gap-2'>
               <MessageCircle
                 size='24'
@@ -65,8 +66,10 @@ export default function SinglePost() {
           </div>
         </div>
         <Separator />
-        <div className="mt-6" dangerouslySetInnerHTML={{ __html: POST.content ? POST.content : "" }}>
-        </div>
+        <div
+          className='mt-6'
+          dangerouslySetInnerHTML={{ __html: POST.content ? POST.content : '' }}
+        ></div>
       </div>
     </PageContainer>
   );
