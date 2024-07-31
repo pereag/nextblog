@@ -3,11 +3,26 @@ import PageContainer from '@/components/PageContainer';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { CATEGORIES } from '@/utils/categories';
-import { ICategory } from '@/types';
+import { ICategory, IPost } from '@/types';
 import PostsList from '@/components/PostsList';
-import { POSTS } from '@/utils/post';
+import { getPosts } from '@/utils/post';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [posts, setPosts] = useState<IPost[]>([]);
+  async function fetchPosts() {
+    try {
+      const posts = await getPosts();
+      if (posts) {
+        setPosts(posts);
+      }
+    } catch (error: any) {
+      console.error('Error:', error.message);
+    }
+  }
+  useEffect(() => {
+    fetchPosts();
+  }, []);
   return (
     <PageContainer>
       <>
@@ -37,7 +52,13 @@ export default function Home() {
             </Button>
           ))}
         </div>
-        <PostsList items={POSTS}></PostsList>
+        <div className='mb-16'>
+          {posts.length > 0 ? (
+            <PostsList items={posts}></PostsList>
+          ) : (
+            <span>Rien pour le moment.</span>
+          )}
+        </div>
       </>
     </PageContainer>
   );
