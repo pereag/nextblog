@@ -1,5 +1,4 @@
 import PageContainer from '@/components/PageContainer';
-import { IPost } from '@/types';
 import React from 'react';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
