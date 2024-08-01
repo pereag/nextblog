@@ -7,6 +7,7 @@ import { ICategory, IPost } from '@/types';
 import PostsList from '@/components/PostsList';
 import { getPosts } from '@/utils/post';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [posts, setPosts] = useState<IPost[]>([]);
@@ -47,9 +48,13 @@ export default function Home() {
         </div>
         <div className='mt-16 flex flex-col items-center justify-center gap-2 md:flex-row'>
           {CATEGORIES.map((category: ICategory) => (
-            <Button variant='outline' key={category.id}>
-              {category.name}
-            </Button>
+            <Link
+              key={category.id}
+              className='contents'
+              href={`/categories/${category.slug}`}
+            >
+              <Button variant='outline'>{category.name}</Button>
+            </Link>
           ))}
         </div>
         <div className='mb-16'>

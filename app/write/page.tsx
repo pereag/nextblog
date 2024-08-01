@@ -15,17 +15,19 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Save, BadgeCheck } from 'lucide-react';
+import Link from 'next/link';
 
 const requiredMessage = 'This field is required';
 
 const formSchema = z.object({
-  title: z.string().min(1, {
+  title: z.string().trim().min(1, {
     message: requiredMessage,
   }),
-  blurb: z.string().min(1, {
+  blurb: z.string().trim().min(1, {
     message: requiredMessage,
   }),
-  content: z.string().min(1, {
+  content: z.string().trim().min(1, {
     message: requiredMessage,
   }),
 });
@@ -103,8 +105,15 @@ export default function WritePage() {
               )}
             />
             <div className='mt-12 flex justify-end gap-2'>
-              <Button>Save draft</Button>
-              <Button type='submit'>Create</Button>
+              <Link href='/' className='contents'>
+                <Button variant='secondary' className='pr-7'>
+                  Save draft <Save size='24' className='pl-2' />
+                </Button>
+              </Link>
+              <Button type='submit' className='pr-7'>
+                Create
+                <BadgeCheck size='24' className='pl-2' />
+              </Button>
             </div>
           </form>
         </Form>
