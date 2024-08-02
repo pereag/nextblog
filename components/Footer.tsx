@@ -11,7 +11,9 @@ export default function Footer() {
       <PageContainer>
         <div className='item-c enter  flex flex-col justify-between gap-2 md:flex-row'>
           <h1 className=' bg-gradient-to-br from-red-400 to-blue-600 bg-clip-text text-2xl font-bold text-transparent md:gap-0'>
-            NextBlog
+            <Link href='/' className='contents'>
+              NextBlog
+            </Link>
           </h1>
           <div className='text-align-center flex flex-col gap-2 md:mx-auto md:flex-row'>
             {CATEGORIES.map((category: ICategory) => (

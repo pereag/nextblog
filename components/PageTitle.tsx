@@ -1,16 +1,14 @@
-import React from 'react'
+import React from 'react';
 
 interface IPageTitle {
   title?: string;
 }
 
 export default function PageTitle(props: IPageTitle) {
-  const { title } = props
+  const { title } = props;
   return (
-    <div className='py-10 px-4'>
-      <h1 className="text 4xl font-bold text-center mb-30">
-        {title}
-      </h1>
+    <div className='px-4 py-10'>
+      <h1 className='text 4xl mb-30 text-center font-bold'>{title}</h1>
     </div>
-  )
+  );
 }

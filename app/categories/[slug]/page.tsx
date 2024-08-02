@@ -10,5 +10,11 @@ type Props = {
 
 export default function CategoriesPage({ params }: Props) {
   const { slug } = params;
-  return (<PageContainer><PageTitle title={`Categories Page ${slug.replace("-", " ")}`}></PageTitle ></PageContainer>);
+  return (
+    <PageContainer>
+      <PageTitle
+        title={`Categories Page ${slug.replace('-', ' ')}`}
+      ></PageTitle>
+    </PageContainer>
+  );
 }
