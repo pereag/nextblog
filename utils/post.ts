@@ -2,6 +2,8 @@ import { IPost } from '@/types';
 
 export const POSTS: IPost[] = [
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 1,
     category: 'React',
     title: 'React State Management: Choosing the Right Solution',
@@ -16,6 +18,8 @@ export const POSTS: IPost[] = [
     slug: 'react-state-management-choosing-right-solution',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 2,
     category: 'Next.js',
     title: 'Server-Side Rendering with Next.js: A Practical Guide',
@@ -30,6 +34,8 @@ export const POSTS: IPost[] = [
     slug: 'server-side-rendering-nextjs-practical-guide',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 3,
     category: 'React Native',
     title: 'Building Cross-Platform Mobile Apps with React Native',
@@ -44,6 +50,8 @@ export const POSTS: IPost[] = [
     slug: 'building-cross-platform-mobile-apps-react-native',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 4,
     category: 'CSS',
     title: 'Advanced CSS Techniques for Modern Web Design',
@@ -58,6 +66,8 @@ export const POSTS: IPost[] = [
     slug: 'advanced-css-techniques-modern-web-design',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 5,
     category: 'JavaScript',
     title: 'Mastering JavaScript Promises and Asynchronous Programming',
@@ -72,6 +82,8 @@ export const POSTS: IPost[] = [
     slug: 'mastering-javascript-promises-asynchronous-programming',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 6,
     category: 'React',
     title: 'Building Reusable React Components: Best Practices',
@@ -86,6 +98,8 @@ export const POSTS: IPost[] = [
     slug: 'building-reusable-react-components-best-practices',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 7,
     category: 'Next.js',
     title: 'Dynamic Routes in Next.js: A Comprehensive Guide',
@@ -100,6 +114,8 @@ export const POSTS: IPost[] = [
     slug: 'dynamic-routes-nextjs-comprehensive-guide',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 8,
     category: 'React Native',
     title: 'State Management in React Native Apps: Redux vs. Context API',
@@ -114,6 +130,8 @@ export const POSTS: IPost[] = [
     slug: 'state-management-react-native-redux-context-api',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 9,
     category: 'CSS',
     title: 'Responsive Design Patterns with CSS Grid and Flexbox',
@@ -128,6 +146,8 @@ export const POSTS: IPost[] = [
     slug: 'responsive-design-patterns-css-grid-flexbox',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 10,
     category: 'JavaScript',
     title: 'ES6+ Features Every JavaScript Developer Should Know',
@@ -142,6 +162,8 @@ export const POSTS: IPost[] = [
     slug: 'es6-features-javascript-developers-should-know',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 11,
     category: 'React',
     title: 'React Hooks: A Deep Dive into Modern React State Management',
@@ -156,6 +178,8 @@ export const POSTS: IPost[] = [
     slug: 'react-hooks-deep-dive-modern-react-state-management',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 12,
     category: 'Next.js',
     title: 'SEO Optimization in Next.js: Best Practices for Higher Rankings',
@@ -170,6 +194,8 @@ export const POSTS: IPost[] = [
     slug: 'seo-optimization-nextjs-best-practices-higher-rankings',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 13,
     category: 'React Native',
     title: 'Navigation in React Native: Choosing the Right Navigation Library',
@@ -184,6 +210,8 @@ export const POSTS: IPost[] = [
     slug: 'navigation-react-native-choosing-right-library',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 14,
     category: 'CSS',
     title: 'SASS and SCSS: Enhancing CSS with Preprocessors',
@@ -198,6 +226,8 @@ export const POSTS: IPost[] = [
     slug: 'sass-scss-enhancing-css-preprocessors',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 15,
     category: 'JavaScript',
     title: 'Modern JavaScript Tooling: Babel, Webpack, and Beyond',
@@ -212,6 +242,8 @@ export const POSTS: IPost[] = [
     slug: 'modern-javascript-tooling-babel-webpack-beyond',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 16,
     category: 'React',
     title: 'Testing React Components: A Comprehensive Guide',
@@ -226,6 +258,8 @@ export const POSTS: IPost[] = [
     slug: 'testing-react-components-comprehensive-guide',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 17,
     category: 'Next.js',
     title: 'Authentication in Next.js: Implementing Secure User Authentication',
@@ -240,6 +274,8 @@ export const POSTS: IPost[] = [
     slug: 'authentication-nextjs-implementing-secure-user-authentication',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 18,
     category: 'React Native',
     title: 'Optimizing React Native Apps for Performance: Best Practices',
@@ -254,6 +290,8 @@ export const POSTS: IPost[] = [
     slug: 'optimizing-react-native-apps-performance-best-practices',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 19,
     category: 'CSS',
     title: 'CSS-in-JS: Styling React Applications with Styled Components',
@@ -268,6 +306,8 @@ export const POSTS: IPost[] = [
     slug: 'css-in-js-styling-react-applications-styled-components',
   },
   {
+    content:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     id: 20,
     category: 'JavaScript',
     title: 'Functional Programming in JavaScript: Principles and Practices',
@@ -282,3 +322,33 @@ export const POSTS: IPost[] = [
     slug: 'functional-programming-javascript-principles-practices',
   },
 ];
+
+export async function getPosts(limit?: number): Promise<IPost[] | undefined> {
+  const url = process.env.NEXT_PUBLIC_API_BASE_URL;
+  try {
+    const response = await fetch(`${url}/posts?limit=${limit}`);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const json = await response.json();
+    return json;
+  } catch (error: any) {
+    console.error(error.message);
+  }
+}
+
+export async function getPost(slug: string): Promise<IPost | undefined> {
+  const url = process.env.NEXT_PUBLIC_API_BASE_URL;
+  try {
+    const response = await fetch(`${url}/posts/${slug}`);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+
+    const json = await response.json();
+    return json;
+  } catch (error: any) {
+    console.error(error.message);
+  }
+}

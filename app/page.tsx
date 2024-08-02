@@ -3,11 +3,27 @@ import PageContainer from '@/components/PageContainer';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { CATEGORIES } from '@/utils/categories';
-import { ICategory } from '@/types';
+import { ICategory, IPost } from '@/types';
 import PostsList from '@/components/PostsList';
-import { POSTS } from '@/utils/post';
+import { getPosts } from '@/utils/post';
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
+  const [posts, setPosts] = useState<IPost[]>([]);
+  async function fetchPosts() {
+    try {
+      const posts = await getPosts();
+      if (posts) {
+        setPosts(posts);
+      }
+    } catch (error: any) {
+      console.error('Error:', error.message);
+    }
+  }
+  useEffect(() => {
+    fetchPosts();
+  }, []);
   return (
     <PageContainer>
       <>
@@ -32,12 +48,22 @@ export default function Home() {
         </div>
         <div className='mt-16 flex flex-col items-center justify-center gap-2 md:flex-row'>
           {CATEGORIES.map((category: ICategory) => (
-            <Button variant='outline' key={category.id}>
-              {category.name}
-            </Button>
+            <Link
+              key={category.id}
+              className='contents'
+              href={`/categories/${category.slug}`}
+            >
+              <Button variant='outline'>{category.name}</Button>
+            </Link>
           ))}
         </div>
-        <PostsList items={POSTS}></PostsList>
+        <div className='mb-16'>
+          {posts.length > 0 ? (
+            <PostsList items={posts}></PostsList>
+          ) : (
+            <span>Rien pour le moment.</span>
+          )}
+        </div>
       </>
     </PageContainer>
   );
